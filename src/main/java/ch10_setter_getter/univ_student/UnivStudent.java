@@ -87,7 +87,4 @@ public class UnivStudent {
         System.out.println("학년 : " + this.grade);
         System.out.println("점수 : " + this.score);
     }
-
-
-
 }

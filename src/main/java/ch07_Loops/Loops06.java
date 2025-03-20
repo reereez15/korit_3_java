@@ -12,7 +12,7 @@ public class Loops06 {
     public static void main(String[] args) {
 
         // 1. scenner import
-        Scanner scanner new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         boolean isEnded = false;
         String answer = "";
 
