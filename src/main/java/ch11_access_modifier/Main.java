@@ -20,8 +20,13 @@ class AccessModifierExample {
 public class Main {
     public static void main(String[] args) {
         // 객체 생성(사용할 클래스 import)
-        AccessModifierExample accessModifierExample = new AccessModifierExample(System.in);
+        AccessModifierExample accessModifierExample = new AccessModifierExample();
+        System.out.println(accessModifierExample.publicVar);
+        System.out.println(accessModifierExample.protectedVar);
+        System.out.println(accessModifierExample.defaultVar);
+//        System.out.println(accessModifierExample.privteVar); // 얘는 오류 발생
 
+        accessModifierExample.show();
 
 
     }
