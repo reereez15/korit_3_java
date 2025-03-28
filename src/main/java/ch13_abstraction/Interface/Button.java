@@ -4,6 +4,7 @@ package ch13_abstraction.Interface;
     단일 상속을 위한 명령어 -> extends
     다중 상속을 위한 명령어 -> implements
  */
+// 추상 클래스
 public abstract class Button implements Press, Up, Down{
 
     @Override

@@ -15,6 +15,7 @@ public class Main {
         TvRemoteController tvRemoteController = new TvRemoteController(
                 new ChannelDownButton(), new ChannelUpButton(), new PowerButton(),
                 new VolumeDownButton(), new VolumeUpButton());
+        ACController acController = new ACController(new TempDownButton(), new TempUpButton(), new PowerButton());
         // 전원 on, off
         tvRemoteController.onPressedPowerButton();
         tvRemoteController.onPressedPowerButton();
@@ -30,5 +31,35 @@ public class Main {
         // 음량 UP
         tvRemoteController.onPressedVolumeUpButton();
         tvRemoteController.onUpVolumeUpButton();
+
+        //물론 메인으로 넘어와서 VolumeUpButton을 생성해서 기능을 동작시킬수는 있습니다.
+        // VolumeUpButton volumeUpButton = new VolumeUpButton();
+        // System.out.println(volumeUpButton.onUp());   //얘가 논리적이진 않은것 같다.
+        // 기본적으로는 tvRemoteController의 일부 기능으로 사용하기 위해 field로 쓰겠다.
+        System.out.println();
+        /*
+            과제 TempDownButton, TempUpButton, ACController 파일을 생성하고
+            정의하여
+            Main에 ACController 객체를 생성하고
+
+            전원이 켜졌습니다.
+
+            온도를 한 칸 내립니다
+            온도를 계속 내립니다.
+
+            온도를 한 칸 올립니다.
+            온도를 계속 올립니다.
+
+            전원이 꺼졌습니다.
+         */
+        acController.onPressedPowerButton();
+        System.out.println();
+        acController.onPressedTempDownButton();
+        acController.onDownTempDownButton();
+        System.out.println();
+        acController.onPressedTempUpButton();
+        acController.onUpTempUpButton();
+        System.out.println();
+        acController.onPressedPowerButton();
     }
 }
