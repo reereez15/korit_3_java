@@ -1,13 +1,13 @@
-package ch15_objects;
+package ch15_objects.teacher;
 
 import java.util.Objects;
 
-public class teacher {
+public class Teacher {
     private String name;
     private String schoolName;
 
     //AllArgsConstructor
-    public teacher(String name, String schoolName) {
+    public Teacher(String name, String schoolName) {
         this.name = name;
         this.schoolName = schoolName;
     }
@@ -38,7 +38,7 @@ public class teacher {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        teacher teacher = (teacher) o;
+        Teacher teacher = (Teacher) o;
         return Objects.equals(name, teacher.name) && Objects.equals(schoolName, teacher.schoolName);
     }
 

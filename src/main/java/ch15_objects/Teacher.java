@@ -1,6 +1,4 @@
-package ch15_objects.Teacher;
-
-import ch15_objects.teacher;
+package ch15_objects;
 
 import java.util.Objects;
 
@@ -40,7 +38,7 @@ public class Teacher {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        teacher teacher = (teacher) o;
+        Teacher teacher = (Teacher) o;
         return Objects.equals(name, teacher.name) && Objects.equals(schoolName, teacher.schoolName);
     }
 
