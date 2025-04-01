@@ -1,6 +1,5 @@
 package ch17_static.builders;
 
-import lombok.Builder;
 import lombok.ToString;
 
 @ToString
@@ -9,7 +8,7 @@ public class Person {
     private int age;
     private String address;
 
-    // 기존 생성자의 코드들(1 12 13 123 2 23 3 )이 코드 낭비도 심하고 실제로 쓰일지에 대한 확신도 없어서
+    // 기존 생성자의 코드들이 코드 낭비도 심하고 실제로 쓰일지에 대한 확신도 없어서
     // 빌더 패턴이 생겨났다.
 
     // 빌더 패턴
